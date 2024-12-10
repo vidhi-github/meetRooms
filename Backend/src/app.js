@@ -32,12 +32,9 @@
 
 
 
-
-// username::msonal4585   password::  dzAx1rU8tRaPymKw
-
-//mongodb+srv://msonal4585:dzAx1rU8tRaPymKw@cluster0.695ge.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-
-
+// if(process.env.NODE_ENV != "production"){
+//     require('dotenv').config();
+// }
 
 
 import express from "express";
@@ -64,12 +61,13 @@ app.use("/api/v1/users", userRoutes);
 
 const start = async () => {
     try {
-        const connectionDb = await mongoose.connect(process.env.ATLASDB_URL, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
+
+        // console.log("MongoDB URI:", process.env.ATLASDB_URL);
+        const connectionDb = await mongoose.connect(process.env.ATLASDB_URL);
 
         console.log(`MONGO Connected DB Host: ${connectionDb.connection.host}`);
+        console.log("MongoDB URI:", process.env.ATLASDB_URL);
+
         
         server.listen(app.get("port"), () => {
             console.log(`LISTENING ON PORT ${app.get("port")}`);
