@@ -1,3 +1,8 @@
+
+backend/src/.env
+
 backend/.env
+
 frontend/zoom-app/node_modules
+
 backend/node_modules
