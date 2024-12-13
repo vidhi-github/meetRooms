@@ -455,7 +455,33 @@ export default function VideoMeetComponent() {
 
 
                     <br/><h1> &nbsp;&nbsp;&nbsp;&nbsp;Let's connect with each other.&nbsp;&nbsp;<u>Enter into Lobby: </u></h1><br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<TextField id="outlined-basic" label="Username" value={username} onChange={e => setUsername(e.target.value)} variant="outlined" />&nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <TextField
+  id="outlined-basic"
+  label="Username"
+  value={username}
+  onChange={e => setUsername(e.target.value)}
+  variant="outlined"
+  sx={{
+    '& .MuiOutlinedInput-root': {
+      borderColor: 'red', // Red border color
+    },
+    '& .MuiOutlinedInput-root:hover': {
+      borderColor: 'red', // Red border on hover
+    },
+    '& .MuiOutlinedInput-root.Mui-focused': {
+      borderColor: 'red', // Red border when focused
+    },
+    '& .MuiInputBase-input': {
+      color: 'white', // White text color
+    },
+    '& .MuiInputLabel-root': {
+      color: 'white', // White label color
+    },
+  }}
+/>
+
+                        &nbsp; &nbsp; &nbsp; &nbsp;
                     <Button variant="contained" onClick={connect}>Connect</Button>
                     <br/>
 
