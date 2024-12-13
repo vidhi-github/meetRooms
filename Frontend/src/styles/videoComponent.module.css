@@ -1,3 +1,14 @@
+body {
+    margin: 0; /* Removes default browser margin */
+    padding: 0; /* Removes default browser padding */
+    height: 100vh; /* Full viewport height */
+    background: url('/public/background.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire background */
+    color: white; /* For better text contrast */
+    font-family: Arial, sans-serif; /* Optional font styling */
+}
+
+
 .meetVideoContainer {
     position: relative;
     height: 100vh;
