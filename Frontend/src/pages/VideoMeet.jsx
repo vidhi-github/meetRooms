@@ -476,7 +476,7 @@ export default function VideoMeetComponent() {
 
                         <div className={styles.chatContainer}>
                             <br/>
-                            <h1><u>Chat</u></h1>
+                            <h1 style={{ color: "red" }}><u>Chats</u></h1>
 
                             <div className={styles.chattingDisplay}>
 
@@ -489,13 +489,13 @@ export default function VideoMeetComponent() {
                                             <p>{item.data}</p>
                                         </div>
                                     )
-                                }) : <p><u>No Messages Yet</u></p>}
+                                }) : <p style={{ color: "black" }}><u>No Messages Yet</u></p>}
 
 
                             </div>
 
                             <div className={styles.chattingArea}>
-                                <TextField value={message} onChange={(e) => setMessage(e.target.value)} id="outlined-basic" label="Enter Your chat" variant="outlined" /> &nbsp;&nbsp;&nsp;&nbsp;
+                                <TextField value={message} onChange={(e) => setMessage(e.target.value)} id="outlined-basic" label="Enter Your chat" variant="outlined" /> &nbsp;&nbsp;
                                 <Button variant='contained' onClick={sendMessage}>Send</Button>
                                 <br/><br/>
                             </div>
