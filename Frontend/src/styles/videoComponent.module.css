@@ -8,30 +8,6 @@ body {
     font-family: Arial, sans-serif; /* Optional font styling */
 }
 
-/* Target the input field */
-.MuiOutlinedInput-root {
-    border-color: red !important; /* Red border color */
-  }
-  
-  .MuiOutlinedInput-root:hover {
-    border-color: red !important; /* Red border on hover */
-  }
-  
-  .MuiOutlinedInput-root.Mui-focused {
-    border-color: red !important; /* Red border when focused */
-  }
-  
-  /* Change text color */
-  .MuiInputBase-input {
-    color: white !important; /* White text color */
-  }
-  
-  /* Change label color */
-  .MuiInputLabel-root {
-    color: white !important; /* White label color */
-  }
-  
-
 
 .meetVideoContainer {
     position: relative;

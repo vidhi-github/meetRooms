@@ -458,7 +458,7 @@ export default function VideoMeetComponent() {
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <TextField
   id="outlined-basic"
-  label="Username"
+  label="Add the username."
   value={username}
   onChange={e => setUsername(e.target.value)}
   variant="outlined"
