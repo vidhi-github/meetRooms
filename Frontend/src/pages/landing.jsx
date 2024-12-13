@@ -32,7 +32,7 @@ export default function LandingPage() {
 
             <div className="landingMainContainer">
                 <div>
-                    <h1><span style={{ color: "#FF9839" }}>Connect</span> with your loved Ones</h1>
+                    <h1><span style={{ color: "#FF9839" }}>Connect</span> with your loved Ones.</h1><br/>
 
                     <p>Cover a distance by Apna Video Call.</p>
                     <div role='button'>

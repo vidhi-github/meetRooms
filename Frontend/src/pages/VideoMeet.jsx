@@ -454,9 +454,10 @@ export default function VideoMeetComponent() {
                 <div>
 
 
-                    <h2>Enter into Lobby </h2>
-                    <TextField id="outlined-basic" label="Username" value={username} onChange={e => setUsername(e.target.value)} variant="outlined" />
+                    <br/><h2> Enter into Lobby </h2><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<TextField id="outlined-basic" label="Username" value={username} onChange={e => setUsername(e.target.value)} variant="outlined" />&nbsp; &nbsp; &nbsp; &nbsp;
                     <Button variant="contained" onClick={connect}>Connect</Button>
+                    <br/>
 
 
                     <div>
@@ -471,7 +472,8 @@ export default function VideoMeetComponent() {
                     {showModal ? <div className={styles.chatRoom}>
 
                         <div className={styles.chatContainer}>
-                            <h1>Chat</h1>
+                            <br/>
+                            <h1><u>Chat</u></h1>
 
                             <div className={styles.chattingDisplay}>
 
@@ -484,14 +486,15 @@ export default function VideoMeetComponent() {
                                             <p>{item.data}</p>
                                         </div>
                                     )
-                                }) : <p>No Messages Yet</p>}
+                                }) : <p><u>No Messages Yet</u></p>}
 
 
                             </div>
 
                             <div className={styles.chattingArea}>
-                                <TextField value={message} onChange={(e) => setMessage(e.target.value)} id="outlined-basic" label="Enter Your chat" variant="outlined" />
+                                <TextField value={message} onChange={(e) => setMessage(e.target.value)} id="outlined-basic" label="Enter Your chat" variant="outlined" /> &nbsp;&nbsp;&nsp;&nbsp;
                                 <Button variant='contained' onClick={sendMessage}>Send</Button>
+                                <br/><br/>
                             </div>
 
 
