@@ -454,14 +454,15 @@ export default function VideoMeetComponent() {
                 <div>
 
 
-                    <br/><h2> Enter into Lobby </h2><br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<TextField id="outlined-basic" label="Username" value={username} onChange={e => setUsername(e.target.value)} variant="outlined" />&nbsp; &nbsp; &nbsp; &nbsp;
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1> <u>Enter into Lobby </u></h1><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<TextField id="outlined-basic" label="Username" value={username} onChange={e => setUsername(e.target.value)} variant="outlined" />&nbsp; &nbsp; &nbsp; &nbsp;
                     <Button variant="contained" onClick={connect}>Connect</Button>
                     <br/>
 
 
                     <div>
-                        <video ref={localVideoref} autoPlay muted></video>
+                        <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<video ref={localVideoref} autoPlay muted></video>
                     </div>
 
                 </div> :
